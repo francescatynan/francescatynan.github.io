@@ -127,14 +127,34 @@ body {
   background-color: #49274A;
 }
 
-#portfolio {
-  position: relative;
-}
-
-#portfolio h2 {
+.portfolio-title h2 {
   color: #F4DECB;
   background-color: #49274A;
   text-align: center;
+}
+
+#portfolio {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#portfolio h3, a {
+  text-align: center;
+  color: #49274A;
+  text-decoration: none;
+}
+
+#portfolio a:hover {
+  text-decoration: underline;
+  color: #F8EEE7;
+  background-color: #49274A;
+}
+
+#portfolio img {
+  position: relative;
+  width: 100%;
 }
 
 #resume {
