@@ -1,0 +1,312 @@
+/* COLOUR PALETTE:
+
+#94618E = GRAPE
+#49274A = EGGPLANT
+#F4DECB = SAND
+#F8EEE7 = SHELL
+
+Sourced From: 'Website color scheme #9: Tints and tones' in https://www.canva.com/learn/website-color-schemes/
+
+=================== */
+
+/* FONT FAMILIES:
+
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+Arial
+sans-serif
+
+=================== */
+
+/* HAMBURGER CSS:
+
+Hamburger Tutorial Sourced From: https://www.youtube.com/watch?v=dAIVbLrAb_U
+
+=================== */
+
+body {
+  font-family: 'Anta', 'Arial', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: #F8EEE7;
+}
+
+.top-row {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  position: fixed;
+  border-bottom-style: solid;
+  border-bottom-color: #49274A;
+  border-bottom-width: 0.35em;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 15%;
+  min-height: 6em;
+  background-color: #F8EEE7;
+  z-index: 1;
+}
+
+.button {
+  position: relative;
+}
+
+.logo {
+  color: #49274A;
+  position: fixed;
+  justify-content: space-between;
+  text-align: center;
+  padding-left: 40%;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #49274A;
+}
+
+.logo a:hover {
+  text-decoration: underline;
+  color: #49274A;
+}
+
+.main-content {
+  padding-top: 3em;
+}
+
+#about {
+  padding-top: 4em;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  background-color: #F8EEE7;
+}
+
+#about h2 {
+  color: #F4DECB;
+  background-color: #49274A;
+}
+
+#about img {
+  border-radius: 50%;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  color: #49274A;
+}
+
+#skills {
+  position: relative;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 0px;
+  color: #49274A;
+  background-color: #F8EEE7;
+}
+
+#skills h2 {
+  color: #F4DECB;
+  background-color: #49274A;
+  text-align: center;
+}
+
+#skills a {
+  color: #49274A;
+}
+
+#skills a:hover {
+  color: #F8EEE7;
+  background-color: #49274A;
+}
+
+#portfolio {
+  position: relative;
+}
+
+#portfolio h2 {
+  color: #F4DECB;
+  background-color: #49274A;
+  text-align: center;
+}
+
+#resume {
+  position: relative;
+}
+
+#resume h2 {
+  color: #F4DECB;
+  background-color: #49274A;
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+  padding-bottom: 7em;
+}
+
+#contact h2 {
+  color: #F4DECB;
+  background-color: #49274A;
+}
+
+.contact a {
+  color: #49274A;
+}
+
+.contact a:hover {
+  color: #F8EEE7;
+  background-color: #49274A;
+}
+
+#contact svg {
+  max-width: 3em;
+}
+
+#icons {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 0px;
+  padding-left: 40%;
+  padding-right: 40%;
+}
+
+#icons p {
+  background-color: #F8EEE7;
+  border: solid;
+  border-color: #F8EEE7;
+  border-width: 0.5em;
+}
+
+#icons a:hover {
+  background-color: #e6c5e3;
+}
+
+.footer {
+  background-color: #49274A;
+  color: #F4DECB;
+  text-align: center;
+  padding: 1.5em;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  min-height: 6em;
+}
+
+/* HAMBURGER CSS */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --bar-width: 60px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --foreground: #49274A;
+  --background: #F4DECB;
+  --hamburger-margin: 1.5em;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2)
+}
+
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  position: absolute;
+  top: var(--hamburger-margin);
+  left: var(--hamburger-margin);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.hamburger-menu:has(input:checked) {
+  --foreground: #F4DECB;
+  --background: #49274A;
+}
+
+.hamburger-menu:has(input:focus-visible)::before, .hamburger-menu:has(input:focus-visible)::after, .hamburger-menu input:focus-visible {
+  border: 1px solid var(--background);
+  box-shadow: 0 0 0 1px var(--foreground);
+}
+
+.hamburger-menu::before, .hamburger-menu::after, .hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing), background-colour var(--animation-timing);
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar {
+  transition: translate var(--animation-timing);
+  translate: -100%;
+  padding: 0.5rem 5rem;
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) +1rem);
+  background-color: var(--foreground);
+  color: var(--background);
+  min-width: 20em;
+  max-width: 25%;
+  padding-bottom: 100%;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+nav {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+nav a {
+  color: #F4DECB;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #49274A;
+  background-color: #F4DECB;
+}
+
+.hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0;
+}
