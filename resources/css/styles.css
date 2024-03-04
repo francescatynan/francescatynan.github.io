@@ -129,9 +129,7 @@ body {
 }
 
 .pr-imgs {
-  padding-left: none;
-  max-width: 100%;
-  height: fit-content;
+  height: 1fr;
 }
 
 .pr-imgs img {
