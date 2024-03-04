@@ -109,6 +109,10 @@ body {
   text-align: center;
 }
 
+:root {
+  --width: 90vw;
+  }
+
 #portfolio {
   position: relative;
   display: grid;
