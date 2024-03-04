@@ -128,17 +128,6 @@ body {
   background-color: #49274A;
 }
 
-.pr-imgs {
-  background-image: url("resources/images/02 Thumbnail - Python Kickstarter - Top Trumps.png");
-  background-size: 300%;
-  background-position: center;
-}
-
-.pr-imgs img {
-  width: 300%;
-  height: auto;
-}
-
 #skills {
   position: relative;
   justify-content: space-between;
