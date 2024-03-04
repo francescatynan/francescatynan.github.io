@@ -100,34 +100,8 @@ body {
 
 #about p {
   color: #49274A;
+  padding-bottom: 1em;
 }
-
-#skills {
-  position: relative;
-  justify-content: space-between;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0px 0px;
-  color: #49274A;
-  background-color: #F8EEE7;
-}
-
-#skills h2 {
-  color: #F4DECB;
-  background-color: #49274A;
-  text-align: center;
-}
-
-#skills a {
-  color: #49274A;
-}
-
-#skills a:hover {
-  color: #F8EEE7;
-  background-color: #49274A;
-}
-
-/*
 
 .portfolio-title h2 {
   color: #F4DECB;
@@ -159,16 +133,62 @@ body {
   width: 33.33%;
 }
 
-*/
-
-#resume {
+#skills {
   position: relative;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 0px;
+  color: #49274A;
+  background-color: #F8EEE7;
 }
 
-#resume h2 {
+#skills-resume h2 {
   color: #F4DECB;
   background-color: #49274A;
   text-align: center;
+}
+
+#skills-resume a {
+  color: #49274A;
+}
+
+#skills a:hover {
+  color: #F8EEE7;
+  background-color: #49274A;
+}
+
+#skills-resume {
+  position: relative;
+}
+
+#resume-education {
+  position: relative;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 0px;
+  color: #49274A;
+  background-color: #F8EEE7;
+}
+
+#soft-skills h2, #technical-skills h2, #resume h2, #education h2 {
+  color: #F4DECB;
+  background-color: #49274A;
+  text-align: center;
+}
+
+#soft-skills h3, #soft-skills p, #technical-skills h3, #technical-skills p, #resume h3, #resume p, #education h3, #education p {
+  padding: 1em;
+}
+
+h3, #link a {
+  color: #49274A;
+}
+
+#link a:hover {
+  color: #F8EEE7;
+  background-color: #49274A;
 }
 
 #contact {
