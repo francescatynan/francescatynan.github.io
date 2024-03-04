@@ -131,6 +131,7 @@ body {
 .project img {
   position: relative;
   width: 100%;
+  align-items: center;
 }
 
 #skills {
