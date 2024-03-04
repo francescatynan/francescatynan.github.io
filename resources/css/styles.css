@@ -130,12 +130,12 @@ body {
 
 .pr-imgs {
   background-image: url("resources/images/02 Thumbnail - Python Kickstarter - Top Trumps.png");
-  background-size: 100%;
+  background-size: 300%;
   background-position: center;
 }
 
 .pr-imgs img {
-  width: 100%;
+  width: 300%;
   height: auto;
 }
 
