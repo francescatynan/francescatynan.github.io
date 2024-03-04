@@ -130,6 +130,7 @@ body {
 
 .pr-imgs {
   padding-left: none;
+  max-width: 100%;
 }
 
 .pr-imgs img {
