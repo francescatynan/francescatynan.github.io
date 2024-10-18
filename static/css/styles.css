@@ -86,24 +86,24 @@ nav {
   background-color: #F8EEE7;
   padding-top: 1%;
   padding-bottom: 1%;
-  colour: #49274A;
+  color: #49274A;
   text-decoration: none;
 }
 
-nav a {
+nav a, #mailto {
   display: block;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  colour: #49274A;
+  color: #49274A;
   text-decoration: none;
 }
 
 nav a:link, nav a:visited, #mailto {
-  colour: #49274A;
+  color: #49274A;
   text-decoration: none;
 }
 
-nav a:hover, nav a:active {
+nav a:hover, nav a:active, #maito:active, #mailto:hover {
   color: #F4DECB;
   background-color: #49274A;
   text-decoration: underline;
@@ -126,7 +126,7 @@ section p {
   overflow: auto;
   padding-left: 10%;
   padding-right: 10%;
-  colour: #49274A;
+  color: #49274A;
 }
 
 footer {
